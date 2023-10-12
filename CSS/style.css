@@ -334,16 +334,11 @@ header{
 .columnsection a{
 	margin-bottom: 5px;
 }
-.columnsection div{
-	height: fit-content;
-}
 .socialmedia{
-	height: fit-content;
+	height: 25px;
+	display: flex;
+	align-items: flex-start;
 }
 .icons img{
 	width: 50%;
-}
-
-.sectionmedia .columnsection h5{
-	padding-bottom: 10px;
 }
