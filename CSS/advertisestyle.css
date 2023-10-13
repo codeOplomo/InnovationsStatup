@@ -1,0 +1,266 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif ;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+:root{
+	--bg-color: #e5e5e5;
+	--text-color: #02073E;
+	--second-color: #5a7184;
+	--main-color: #6e54fa;
+	--big-font: 6rem;
+	--h2-font: 3rem;
+	--p-font: 1.1rem;
+}
+body{
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+
+header{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	z-index: 1000;
+	/*display: flex;
+	align-items: center;
+	justify-content: space-between;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 30px 18%;
+	transition: ease .40s;
+	flex-wrap: wrap;
+	background-color: var(--bg-color);
+}
+
+
+.navlinks{
+	display: flex;
+	justify-content: space-between;
+}
+.underline{
+	display: flex;
+    justify-content: end;
+}
+
+.navbar{
+	display: flex;
+}
+
+.navbar a{
+	color:  var(--text-color);
+	font-size: var(--p-font);
+	font-weight: 500;
+	padding: 10px 22px;
+	border-radius: 4px;
+	transition: ease .40s;
+}
+#login{
+    color:  var(--text-color);
+}
+
+#started{
+	font-weight: bold;
+	color: #0A8080;
+}
+
+.navbar a:hover{
+	background: var(--bg-color);
+	color: var(--text-color);
+	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+	border-radius: 4px;
+}
+
+.home{
+    background-image: url('/img/advertisetop.png');
+    background-size: cover;
+    height: 100vh;
+}
+.home-text{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 35vh;
+	padding-right: 80vh;
+	padding-left: 30vh;
+}
+.home-text h1{
+    color: #0A8080;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /*  stroke: white;*/
+    stroke-width: 3vh;
+    font-weight: bolder;
+    font-size: 8vh;
+    margin: 0;
+    -webkit-text-stroke: 0.1cm rgb(255, 255, 255);
+	padding-bottom: 7vh;
+}
+.home-text p{
+	font-size: 3vh;
+	line-height: 7vh;
+	font-weight: bold;
+}
+.home-text h6{
+	color: yellow;	
+}
+
+.sideLinksR{
+    display: flex;
+	gap: 5vh;
+}
+
+.centredLinks{
+	padding-right: 150px;
+}
+.titletext{
+	display: flex;
+	justify-content: space-around;
+	border-bottom: solid;
+	border-color: #c5ccd2;
+	margin-left: 15vh;
+	margin-right: 15vh;
+}
+.titletext div{
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+}
+.thumbnails{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 5vh;
+	margin-left: 23vh;
+	margin-right: 23vh;
+	gap: 2px;
+}
+.thumbtemplate{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 25%;
+}
+
+.picture img{
+	width: 100%;
+}
+
+.thumbservice h1{
+	padding-top: 5vh;
+	font-size: medium;
+}
+.servicesContainer{
+	background-color: white;
+	padding-bottom: 5vh;
+}
+.bottomContainer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 40vh;
+	padding-right: 40vh;
+}
+.description{
+	padding-top: 10vh;
+	display: flex;
+}
+.textarea{
+	display: flex;
+	flex-direction: column;
+	padding-right: 10vh;
+}
+.middlesection{
+	padding-top: 5vh;
+}
+.right{
+	display: flex;
+	flex-direction: column;
+}
+.left{
+	display: flex;
+	flex-direction: column; 
+}
+.left div{
+	display: flex;
+	gap: 15px;
+	padding-bottom: 5px;
+}
+.right div{
+	display: flex;
+	gap: 15px;
+	padding-bottom: 5px;
+}
+.bottomsection{
+	padding-top: 5vh;
+	justify-content: flex-start;
+}
+.topsection h1{
+font-weight: bold;
+line-height: 40px;
+}
+.middlesection p{
+	line-height: 35px;
+}
+.textservice{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: solid;
+	border-color: #c5ccd2;
+	margin-top: 15vh;
+	gap: 15vh;
+}
+.textservice div{
+	font-weight: bold;
+	font-size: 13px;
+	padding-bottom: 5vh;
+}
+.top{
+	display: flex;
+	gap: 25px;
+	padding-bottom: 3vh;
+}
+
+.footertext {
+    display: flex;
+    justify-content: space-between;
+	padding-left: 25vh;
+	padding-right: 25vh;
+	padding-top: 5vh;
+}
+.columnsection{
+	display: flex;
+	flex-direction: column;
+}
+.columnsection a{
+	line-height: 30px;
+}
+.heightmedia{
+	display: flex;
+	flex-direction: column;
+	
+}
+.heightmedia a{
+	line-height: 15px;
+}
+.mediacolumnsection h5{
+	padding-bottom: 2vh;
+}
+.columnsection h5{
+	padding-bottom: 3vh;
+}
+
+.medias{
+	padding-right: 10px;
+}
+.footer{
+	padding-bottom: 5vh;
+}

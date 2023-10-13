@@ -28,14 +28,28 @@ header{
 	right: 0;
 	width: 100%;
 	z-index: 1000;
-	display: flex;
+	/*display: flex;
 	align-items: center;
-	justify-content: space-between;
-	background: transparent;
+	justify-content: space-between;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 	padding: 30px 18%;
 	transition: ease .40s;
 	flex-wrap: wrap;
-	backdrop-filter: blur(10px);
+	background-color: var(--bg-color);
+}
+.navlinks{
+	display: flex;
+	justify-content: space-between;
+}
+.underline{
+	display: flex;
+    justify-content: end;
+}
+
+#login{
+    color:  var(--text-color);
 }
 
 .navbar{
@@ -57,17 +71,22 @@ header{
 	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
 	border-radius: 4px;
 }
+.paimentcontainer{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 35vh;
+	margin-right: 35vh;
+	margin-top: 15vh;
+	padding-top: 3vh;
+	border-top: solid;
+	border-color: #c0c3d1;
+	flex-wrap: wrap;
+}
 
 .sideLinksR{
     display: flex;
-}
-.sideLinksR a{
-	color: var(--text-color);
-	font-size: var(--p-font);
-	font-weight: 500;
-	padding: 10px 22px;
-	border-radius: 4px;
-	transition: ease .40s;
+	gap: 5vh;
 }
 .navbar{
 	display: flex;
@@ -81,6 +100,7 @@ header{
 #started{
 	font-weight: bold;
 	color: #0A8080;
+	border: none;
 }
 .centredLinks{
 	padding-right: 150px;
@@ -224,6 +244,7 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 .areainfo{
     justify-content: space-evenly;
@@ -301,44 +322,46 @@ header{
 #myCheckbox{
 	border: none;
 }
-.footer{
-	display: flex;
-	width: fit-content;
-	margin-top: 5vh;
-	justify-content: space-evenly;
-	align-items: center;
-}
 .section{
 	width: 30vh;
 }
 
-
 .footertext{
-	height: fit-content;
 	display: flex;
-	align-items: center;
-	justify-content: flex;
+	justify-content: space-between;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
 	padding-left: 25vh;
 	padding-right: 25vh;
 }
 .columnsection{
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	height: fit-content;
+}
+
+.heightmedia{
+	display: flex;
+	flex-direction: column;
+}
+.columnsection a{
+	line-height: 30px;
+}
+.mediacolumnsection h5{
+	padding-bottom: 2vh;
 }
 
 .columnsection h5{
-	margin-bottom: 15px;
+	padding-bottom: 3vh;
 }
 .columnsection a{
 	margin-bottom: 5px;
 }
 .socialmedia{
-	height: 25px;
 	display: flex;
-	align-items: flex-start;
 }
 .icons img{
 	width: 50%;
+}
+.medias{
+	padding-right: 10px;
 }
