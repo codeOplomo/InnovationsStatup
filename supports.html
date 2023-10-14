@@ -1,51 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supports</title>
-    <link rel="stylesheet" type="text/css" href="css/supportstyle.css">
-</head>
-<body>
-    <header>
-		<div class="navlinks">
-		<div class="sideLinksL">
-			<a href="#" class="logo">Innovations</a>
-			<!--<div class="bx bx-menu" id="menu-icon"></div>--->
-		</div>
-		<div class="centredLinks">
-			<nav>
-				<ul class="navbar">
-					<li><a href="landing-page.html">Home</a></li>
-					<li><a href="advertise.html">Advertise</a></li>
-					<li><a href="about.html">Supports</a></li>
-					<li><a href="contactUs.html">About</a></li>
-				</ul>
-			</nav>
 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Supports</title>
+	<link rel="stylesheet" type="text/css" href="css/supportstyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+	<header>
+		<div class="navlinks">
+			<div class="sideLinksL">
+				<a href="#" class="logo">Innovations</a>
+				<!--<div class="bx bx-menu" id="menu-icon"></div>--->
+			</div>
+			<div class="centredLinks">
+				<nav>
+					<ul class="navbar">
+						<li><a href="landing-page.html">Home</a></li>
+						<li><a href="advertise.html">Advertise</a></li>
+						<li><a href="supports.html">Supports</a></li>
+						<li><a href="about.html">About</a></li>
+					</ul>
+				</nav>
+
+			</div>
+			<div class="sideLinksR">
+				<a id="login" href="#">Login</a>
+				<a id="started" href="#">Get started</a>
+			</div>
 		</div>
-		<div class="sideLinksR">
-			<a id="login" href="#">Login</a>
-			<a id="started" href="#">Get started</a>
-		</div>
-	    </div>
 		<div class="underline"><img src="/img/underline.png" alt=""></div>
 	</header>
 
-    
+
 	<!--Home section--->
 	<section class="home" id="home">
 		<div class="home-container">
 			<div class="home-container-top">
 				<h1>Meet our superheros</h1>
-				<p>Build an incredible workplace and grow your business With Gusto's all in one platform with amazing contents.</p>
+				<p>Build an incredible workplace and grow your business With Gusto's <br> all in one platform with amazing
+					contents.</p>
 			</div>
 			<div class="herosprofile">
-				<img src="img/emmale.png" alt="">
-                <img src="img/daisy.png" alt="">
-                <img src="img/hicks.png" alt="">
+				<div class="information">
+					<img src="img/emmale.png" alt="">
+					<h4>Emmalee Mclain</h4>
+					<p>Product Designer</p>
+					<div class="medialinks">
+						<img class="medias" src="/img/twitter.png" alt="">
+						<img class="medias" src="/img/github.png" alt="">
+						<img class="medias" src="/img/dribble.png" alt="">
+					</div>
+				</div>
+				<div class="information">
+					<img src="img/daisy.png" alt="">
+					<h4>Daisy Morgan</h4>
+					<p>Lead Developer</p>
+					<div class="medialinks">
+						<img class="medias" src="/img/twitter.png" alt="">
+						<img class="medias" src="/img/dribble.png" alt="">
+					</div>
+				</div>
+				<div class="information">
+					<img src="img/hicks.png" alt="">
+					<h4>Ariyanna Hicks</h4>
+					<p>Experience Designer</p>
+					<div class="medialinks">
+						<img class="medias" src="/img/twitter.png" alt="">
+						<img class="medias" src="/img/dribble.png" alt="">
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
+
+	<!--contact-container--->
+	<section class="contact-container">
+		<div class="contact">
+		<div class="top-contact-container">
+			<h1>Questions or comments?</h1>
+			<h4>Get in touch</h4>
+			<p>We'd love to hear from you! Let us know what you think about us or any other general feedback. As always feel free to chat with us, tweet at us, or get in touch with support.</p>
+		</div>
+		<div class="bottom-contact-container">
+			<form action="" method="post">
+				<label for="name" >NOM</label>
+				<input type="text" id="name" name="name" required>
+				<label for="lastname">LAST NAME</label>
+				<input type="text" id="lastname" name="lastname" required>
+				<label for="email">EMAIL</label>
+				<input type="email" id="email" name="email" required>
+				<label for="phone">PHONE NUMBER</label>
+				<input type="tel" id="phone" name="phone" required>
+				<label for="message">MESSAGE</label>
+				<textarea id="message" name="message" rows="10" cols="50" required></textarea>
+				<input class="submitbtn" type="submit" value="Submit">
+				
+			</form>
+		</div>
+	</div>
+</section>
+
+<!--footer--->
+<section class="footer">
+	<div class="footertext">
+		<div class="section">
+			<div class="">
+				<h6>Logo</h6>
+				<p>Innovations</p>
+			</div>
+		</div>
+		<div class="section">
+			<div class="columnsection">
+				<h5>About Us</h5>
+				<a href="">Support Center</a>
+				<a href="">Customer Support</a>
+				<a href="">About Us</a>
+				<a href="">Copyright</a>
+			</div>
+		</div>
+		<div class="section">
+			<div class="columnsection">
+				<h5>Our Information</h5>
+				<a href="">Return Policy</a>
+				<a href="">Privacy Policy</a>
+				<a href="">Terms & Conditions</a>
+				<a href="">Site Map</a>
+			</div>
+		</div>
+		<div class="section">
+			<div class="columnsection">
+				<h5>My Account</h5>
+				<a href="">Press Inquiries</a>
+				<a href="">Social Media</a>
+				<a href="">Directories</a>
+				<a href="">Images & B-roll</a>
+			</div>
+		</div>
+		<div class="section">
+			<div class="columnsection">
+			<h5>Contact</h5>
+					<a href=""> <i class="fa-brands fa-facebook fa-lg medias" style="color: #3077f3;"></i> Facebook</a>
+					<a href=""> <img class="medias"  src="/img/twitter.png" alt=""> Twitter</a>
+					<a href=""> <img class="medias"  src="/img/github.png" alt=""> Github</a>
+					<a href=""> <img class="medias" src="/img/dribble.png" alt=""> Dribble</a>
+		</div>
+		</div>
+	</div>
+</section>
+
+
 </body>
+
 </html>

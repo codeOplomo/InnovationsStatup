@@ -243,17 +243,6 @@ line-height: 40px;
 .columnsection a{
 	line-height: 30px;
 }
-.heightmedia{
-	display: flex;
-	flex-direction: column;
-	
-}
-.heightmedia a{
-	line-height: 15px;
-}
-.mediacolumnsection h5{
-	padding-bottom: 2vh;
-}
 .columnsection h5{
 	padding-bottom: 3vh;
 }
