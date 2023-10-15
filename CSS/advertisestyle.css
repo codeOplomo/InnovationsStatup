@@ -33,7 +33,7 @@ header{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	padding: 30px 18%;
+	padding: 0px 18%;
 	transition: ease .40s;
 	flex-wrap: wrap;
 	background-color: var(--bg-color);
@@ -43,11 +43,18 @@ header{
 .navlinks{
 	display: flex;
 	justify-content: space-between;
+	align-items: end;
 }
 .underline{
 	display: flex;
     justify-content: end;
+	padding-bottom: 3vh;
 }
+
+#login{
+    color:  var(--text-color);
+}
+
 
 .navbar{
 	display: flex;
@@ -210,6 +217,10 @@ line-height: 40px;
 .middlesection p{
 	line-height: 35px;
 }
+.section{
+	width: 30vh;
+}
+
 .textservice{
 	display: flex;
 	justify-content: space-between;
@@ -229,19 +240,22 @@ line-height: 40px;
 	padding-bottom: 3vh;
 }
 
-.footertext {
-    display: flex;
-    justify-content: space-between;
+.footertext{
+	display: flex;
+	justify-content: center;
+	gap: 5vh;
 	padding-left: 25vh;
-	padding-right: 25vh;
-	padding-top: 5vh;
+	padding-right: 20vh;
+	align-items: baseline;
+	padding-top: 2vh;
+	padding-bottom: 5vh;
 }
 .columnsection{
 	display: flex;
 	flex-direction: column;
 }
 .columnsection a{
-	line-height: 30px;
+	line-height: 35px;
 }
 .columnsection h5{
 	padding-bottom: 3vh;
@@ -252,4 +266,32 @@ line-height: 40px;
 }
 .footer{
 	padding-bottom: 5vh;
+}
+
+.sideLinksL{
+	display: flex;
+	align-items: flex-end;
+}
+.logopic{
+	height: 7vh;
+}
+.logo{
+	font-weight: bold;
+	color: var(--text-color);
+}
+.logostyle{
+	color: #0A8080;
+}
+.footerlogo{
+	display: flex;
+	align-items: baseline;
+	padding-bottom: 3vh;
+}
+.logoinfo a{
+	line-height: 30px;
+}
+.logoinfo p{
+	color: rgb(164, 167, 167);
+	font-size: 10px;
+	padding-top: 2vh;
 }
