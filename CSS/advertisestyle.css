@@ -85,7 +85,7 @@ header{
 }
 
 .home{
-    background-image: url('./img/advertisetop.png');
+    background-image: url('../img/advertisetop.png');
     background-size: cover;
     height: 100vh;
 }
