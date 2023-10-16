@@ -228,7 +228,7 @@ header{
 .subcontainer{
 	/*height: 30vh;
 	width: 100%;*/
-	background-image: url('/img/landing-pic.png');
+	background-image: url('img/landing-pic.png');
 	background-size: cover;
 	align-items: center;
 	height: 40vh;
