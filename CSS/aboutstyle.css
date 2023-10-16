@@ -90,7 +90,7 @@ header{
 }
 
 .about-container{
-	background-image: url('img/aboutbckg.png.png');
+	background-image: url('./img/aboutbckg.png.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: 100vh 15vh;
@@ -142,7 +142,7 @@ span{
 	line-height: 4vh;
 }
 .topblog{
-	background-image: url('/img/rightopic.png');
+	background-image: url('./img/rightopic.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 25vh;
@@ -155,7 +155,7 @@ span{
 	line-height: 3vh;
 }
 .bottomblog{
-	background-image: url('img/rightbottompic.png');
+	background-image: url('./img/rightbottompic.png');
 	background-size:cover;
 	background-repeat: no-repeat;
 	height: 25vh;
