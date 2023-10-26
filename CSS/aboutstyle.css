@@ -21,10 +21,10 @@ body{
 	color: var(--text-color);
 }
 
-header{
+/***********header*********/
+header {
 	position: fixed;
 	top: 0;
-	right: 0;
 	width: 100%;
 	z-index: 1000;
 	/*display: flex;
@@ -33,67 +33,99 @@ header{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	padding: 0px 18%;
 	transition: ease .40s;
 	flex-wrap: wrap;
 	background-color: var(--bg-color);
+	padding: 1rem 10rem;
+}
+
+.logopic {
+	width: 50px;
+	height: 50px;
+}
+
+.logo {
+	font-weight: bold;
+	color: var(--text-color);
+}
+
+.hiddenlabel {
+	display: none;
 }
 .navlinks{
 	display: flex;
 	justify-content: space-between;
-	align-items: end;
 }
+
+.navlinks div {
+	display: flex;
+	align-items: center;
+}
+
+.navlinks .menu-icon,
+.navlinks .closeMenu {
+	display: none;
+}
+.logo-name {
+	display: flex;
+	align-content: center;
+}
+
+.sideLinksR {
+	display: flex;
+	justify-content: baseline;
+	align-items: center;
+	gap: 3vw;
+}
+
+.sideLinksL {
+	min-width: 20%;
+}
+
 .underline{
 	display: flex;
-    justify-content: end;
-	padding-bottom: 3vh;
+	flex-direction: column;
 }
 
 #login{
     color:  var(--text-color);
 }
-
-.navbar{
+.navbar {
 	display: flex;
+	list-style: none;
 }
 
-.navbar a{
-	color:  var(--text-color);
+.navbar a,
+.navlinks #login {
+	color: var(--text-color);
 	font-size: var(--p-font);
 	font-weight: 500;
 	padding: 10px 22px;
 	border-radius: 4px;
 	transition: ease .40s;
 }
-#login{
-    color:  var(--text-color);
-}
-#started{
-	font-weight: bold;
-	color: #0A8080;
-}
 
-.navbar a:hover{
+.navbar a:hover,
+.navlinks #login:hover {
 	background: var(--bg-color);
 	color: var(--text-color);
 	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
 	border-radius: 4px;
 }
-
-.sideLinksR{
-    display: flex;
-	gap: 5vh;
+#started{
+	font-weight: bold;
+	color: #0A8080;
+	border: none;
 }
 
-.centredLinks{
-	padding-right: 150px;
-}
+
+/*********about section***********/
 
 .about-container{
 	background-image: url('../img/aboutbckg.png.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: 100vh 15vh;
+	background-position: 100vh 40vh;
 	padding-top: 15vh;
 	padding-bottom: 10vh;
 }
@@ -109,14 +141,16 @@ span{
 }
 .about-container p{
 	font-weight: bold;
-	padding-left: 55vh;
 	padding-right: 55vh;
 	line-height: 4vh;
 	text-align: left;
 	color: rgb(77, 71, 71);
-	padding-right: 90vh;
-	padding-left: 30vh;
+	width: 90vw;
+	padding-left: 15vw;
+	-webkit-text-stroke: 0.01cm white;
 }
+
+	/*********blogs section***********/
 .blogs{
 	padding-top: 10vh;
 	background-color: white;
@@ -134,10 +168,10 @@ span{
 .top-blogs-container h1{
 	padding-bottom: 5vh;
 	font-size: 5vh;
+	text-align: center;
 }
 .top-blogs-container p{
-	padding-left: 55vh;
-	padding-right: 55vh;
+	width: 60vw;
 	text-align: center;
 	line-height: 4vh;
 }
@@ -170,8 +204,8 @@ span{
 .bottom-blogs-container{
 	display: flex;
 	align-items: flex-start;
-	padding-left: 35vh;
-	padding-right: 35vh;
+	justify-content: center;
+	width: 60%;
 	gap: 5vh;
 }
 .leftcontainer{
@@ -216,9 +250,14 @@ span{
 	flex-direction: column;
 	gap: 5vh;
 }
+
+/* other services section*/
 .services{
 	background-color: white;
 	padding-bottom: 10vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .top-service-container{
 	display: flex;
@@ -227,42 +266,28 @@ span{
 	padding-bottom: 5vh;
 }
 .top-service-container h1{
+	text-align: center;
 	padding-bottom: 5vh;
 	font-size: 5vh;
 }
 .top-service-container p{
-	padding-left: 55vh;
-	padding-right: 55vh;
+	width: 60%;
 	text-align: center;
 	line-height: 4vh;
 }
-.topservices{
-	display: flex;
-	gap: 5vh;
-}
-.bottomservices{
+.topservices, .bottomservices{
 	display: flex;
 	gap: 5vh;
 }
 
 .bottom-service-container{
-	padding-left: 20vh;
-	padding-right: 20vh;
+	width: 80%;
 	display: flex;
 	flex-direction: column;
 	gap: 10vh;
-
 }
 
-.leftservice{
-	display: flex;
-	gap: 3vh;
-}
-.middleservice{
-	display: flex;
-	gap: 3vh;
-}
-.rightservice{
+.middleservice, .leftservice, .rightservice {
 	display: flex;
 	gap: 3vh;
 }
@@ -273,6 +298,8 @@ span{
 	line-height: 4vh;
     padding-bottom: 3vh;
 }
+
+/*********footer section***********/
 
 .section{
 	width: 30vh;
@@ -292,27 +319,32 @@ span{
 	display: flex;
 	flex-direction: column;
 }
+
+.heightmedia {
+	display: flex;
+	flex-direction: column;
+}
+
 .columnsection a{
-	line-height: 30px;
+	line-height: 35px;
 }
 .columnsection h5{
 	padding-bottom: 3vh;
 }
 
+.socialmedia {
+	display: flex;
+}
+
+.icons img {
+	width: 50%;
+}
+
 .medias{
 	padding-right: 10px;
 }
-.sideLinksL{
-	display: flex;
-	align-items: flex-end;
-}
-.logopic{
-	height: 7vh;
-}
-.logo{
-	font-weight: bold;
-	color: var(--text-color);
-}
+
+
 .logostyle{
 	color: #0A8080;
 }
@@ -328,4 +360,229 @@ span{
 	color: rgb(164, 167, 167);
 	font-size: 10px;
 	padding-top: 2vh;
+}
+
+@media screen and (max-width: 768px){
+	/*header*/
+	body {
+		overflow-x: hidden;
+	}
+	
+	#started,
+	.underline img {
+		display: none;
+	}
+	
+	.navlinks .menu-icon {
+		display: block;
+		cursor: pointer;
+	}
+
+	.navlinks .closeMenu {
+		display: block;
+		position: absolute;
+		cursor: pointer;
+		left: 6vh;
+		top: 4vh;
+		transform: translateX(-10vh);
+	}
+
+
+	.navbar {
+		flex-direction: column;
+		text-align: center;
+		position: absolute;
+		left: 0;
+		top: 11vh;
+		width: 50%;
+		height: 100%;
+		transform: translateX(-100%);
+		transition: transform 0.5s ease;
+	}
+	#login {
+		text-align: center;
+		position: absolute;
+		left: 0;
+		top: 47.5vh;
+		width: 50%;
+		height: 100%;
+		transform: translateX(-100%);
+		transition: transform 0.5s ease;
+		
+	}
+	
+	.closeMenu.show {
+		transform: translateX(0vw);
+	}
+
+	.closeMenu.hide {
+		transform: translateX(-10vw);
+	}
+
+	.menu-icon.hide {
+		transform: translateX(-15vw);
+	}
+
+	.menu-icon.show {
+		transform: translate(0);
+	}
+
+	.navbar.show, #login.show  {
+		transform: translateX(0);
+
+	}
+
+	.navbar.hide, #login.hide  {
+		transform: translateX(-100%);
+
+	}
+	.navbar li, .navlinks #login{
+		background-color: #FBF5F1;
+		padding: 3vh 0;
+	}
+
+	.navbar li:hover {
+		background: var(--bg-color);
+		color: var(--text-color);
+		box-shadow: 10px 20px 100px rgb(85 85 85 / 50%);
+		border-radius: 4px;
+	}
+
+	.navbar a:hover {
+		font-weight: bold;
+		color: #0A8080;
+		box-shadow: none;
+	}
+	.navlinks #login:hover {
+		font-weight: bold;
+		color: #0A8080;
+		background: var(--bg-color);
+		box-shadow: 10px 20px 100px rgb(85 85 85 / 50%);
+		border-radius: 4px;
+	}
+
+	.navlinks {
+		padding: 0;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		gap: 15vw;
+	}
+
+	.logopic {
+		width: 40px;
+		height: 40px;
+	}
+
+	.sideLinksL {
+		display: flex;
+		align-items: center;
+	}
+	
+	header {
+		background-color: #FBF5F1;
+		display: flex;
+		justify-content: center;
+		padding: 1rem 2rem;
+	}
+	/*********about section***********/
+	
+.about-container p{
+	padding: 0;
+	text-align: center;
+	padding-bottom: 20vh;
+}
+.about-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-position: 25vw 85vh;
+	background-size: 50%;
+}
+.about-container h1{
+	padding-bottom: 5vh;
+}
+
+	/*********blogs section***********/
+	
+.bottom-blogs-container{
+	flex-direction: column;
+	padding: 0;
+	width: 100%;
+	gap: 10vh;
+}
+.blogs{
+	width: 100%;
+	padding-left: 7vw;
+	padding-right: 7vw;
+}
+
+.top-blogs-container p{
+	width: 100%;
+}
+.middlecontainer, .leftcontainer, .rightcontainer{
+	width: 100%;
+}
+/*********other services section***********/
+
+.topservices, .bottomservices{
+	flex-direction: column;
+	width: 40%;
+}
+.bottom-service-container{
+	width: 100%;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: center;
+	gap: 5vw;
+}
+.services{
+	width: auto;
+}
+.leftservice div img, .middleservice div img, .rightservice div img{
+	width: 10vw;
+}
+.infoservice{
+	width: auto;
+}
+
+.infoservice h4{
+	font-size: small;
+}
+
+/*********footer section***********/
+.footertext {
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 1vh;
+	padding: 0;
+	padding-top: 3vh;
+	padding-bottom: 2vh;
+}
+
+.footerlogo {
+	justify-content: center;
+}
+
+.columnsection a {
+	display: none;
+}
+
+.columnsection h5 {
+	justify-content: center;
+}
+
+.section {
+	width: 90%;
+	background-color: #FBF5F1;
+}
+
+.footerlogosection {
+	background-color: var(--bg-color);
+}
+
+.columnsection h5 {
+	padding: 1vh;
+}
 }
