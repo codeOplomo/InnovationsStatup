@@ -159,10 +159,10 @@ header {
     transform: translateX(-100%); /* Move items left by 100% */
 }
 
-/* .information.active {
+.information.active {
 	display: block; 
 	// Display the active item 
-} */
+}
 .home-container-top{
 	display: flex;
 	flex-direction: column;
@@ -181,10 +181,10 @@ header {
 .information p{
 	color: rgb(157, 151, 151);
 }
-.medialinks{
+/* .medialinks{
 	display: flex;
 	gap: 2vh;
-}
+} */
 #hook{
 	width: 17.5vw;
 }
@@ -215,7 +215,22 @@ header {
 .nxtbtn{
 	right: 0;
 }
+/**********swiper**********/
+.middle-content {
+    padding-bottom: 30px;
 
+}
+.CoFounders{
+    width: 80%;
+    margin-left: 10%;
+}
+.CoFounders img{
+    width: 250px;
+    height: 400px;
+}
+.swiper{
+    align-items: center;
+}
 
 
 
